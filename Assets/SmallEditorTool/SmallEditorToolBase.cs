@@ -8,6 +8,7 @@ namespace SmallEditorTool
     [CustomEditor(typeof(SmallEditorToolBase))]
     public class SmallEditorToolEditor : Editor
     {
+
     }
 
     public abstract class SmallEditorToolBase : ScriptableObject
