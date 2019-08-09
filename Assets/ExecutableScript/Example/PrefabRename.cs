@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-namespace SmallEditorTool.TestTools
+namespace ExecutableScript.TestTools
 {
-	public class PrefabRename : SmallEditorToolBase
+    [CreateAssetMenu(fileName = "PrefabRename", menuName = "EditorExeScript/PrefabRename")]
+    public class PrefabRename : ExecutableScriptBase
 	{
 		public GameObject prefab;
 		public string newName;

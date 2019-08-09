@@ -1,0 +1,24 @@
+{
+  "Objects": [
+    {
+      "SOinstanceID": 9864,
+      "name": "LogSmallTool",
+      "json": {
+    "s": "dddd"
+}
+    },
+    {
+      "SOinstanceID": 9914,
+      "name": "CreateObjectSmallTool",
+      "json": {
+    "goToAdd": {
+        "instanceID": 0
+    },
+    "count": 0,
+    "path": {
+        "path": ""
+    }
+}
+    }
+  ]
+}

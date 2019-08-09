@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-namespace SmallEditorTool
+namespace ExecutableScript
 {
     [System.Serializable]
     public struct AssetPath
@@ -20,21 +20,25 @@ namespace SmallEditorTool
         }
     }
 
-
+    
     [CustomPropertyDrawer(typeof(AssetPath))]
     public class AssetPathDrawer : PropertyDrawer
     {
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField(label,GUILayout.MaxWidth(100));
             property.Next(true);
-            EditorGUILayout.LabelField(property.stringValue);
+            EditorGUILayout.TextField(property.stringValue);
             if (GUILayout.Button("Browse"))
             {
-                //Unity处理Path时似乎都是默认正斜杠，与环境无关
+                //Unity处理Path时默认正斜杠作为分割符，与环境无关
                 property.stringValue = UnityEditor.EditorUtility.OpenFolderPanel("Browse", "", "") + '/';
             }
             EditorGUILayout.EndHorizontal();
+
         }
+
+        
     }
 }

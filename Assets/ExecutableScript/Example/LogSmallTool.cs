@@ -2,9 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace SmallEditorTool.TestTools
+namespace ExecutableScript.TestTools
 {
-    public class LogSmallTool : SmallEditorToolBase
+    [CreateAssetMenu(fileName = "LogSmallTool", menuName = "EditorExeScript/LogSmallTool")]
+    public class LogSmallTool : ExecutableScriptBase
     {
         public string s;
         public override void Excute()

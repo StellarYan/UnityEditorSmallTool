@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System.Reflection;
-namespace SmallEditorTool
+namespace ExecutableScript
 {
-	public class SheetTool : SmallEditorToolBase
+    [CreateAssetMenu(fileName = "SheetTool", menuName = "EditorExeScript/SheetTool")]
+    public class SheetTool : ExecutableScriptBase
 	{
 		public GameObject[] prefabs;
 		Dictionary<GameObject, List<SerializedProperty>> sheet;

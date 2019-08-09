@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-namespace SmallEditorTool
+namespace ExecutableScript
 {
     [System.Serializable]
     public struct FieldSingleSelector

@@ -3,15 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-namespace SmallEditorTool
+namespace ExecutableScript
 {
-    [CustomEditor(typeof(SmallEditorToolBase))]
-    public class SmallEditorToolEditor : Editor
-    {
-
-    }
-
-    public abstract class SmallEditorToolBase : ScriptableObject
+    public abstract class ExecutableScriptBase : ScriptableObject
     {
         private Editor editor;
         public abstract void Excute();
